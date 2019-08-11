@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="1368.0" styleClass="parenty" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.controllers.ReportController">
+   <children>
+      <TableView fx:id="tableReport" layoutX="14.0" layoutY="101.0" prefHeight="528.0" prefWidth="950.0" styleClass="background" stylesheets="@css/style.css" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="101.0">
+        <columns>
+          <TableColumn id="table-column" fx:id="columnData" prefWidth="125.0" styleClass="table-column" text="Сана" />
+          <TableColumn fx:id="columnProductN" prefWidth="184.0" text="Махсулот" />
+            <TableColumn fx:id="columnCount" prefWidth="113.0" text="Сони" />
+            <TableColumn fx:id="columnProductPrice" prefWidth="555.0" text="Дона нархи" />
+            <TableColumn fx:id="columnTotal" prefWidth="75.0" text="Жами" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXDatePicker fx:id="startDate" defaultColor="#243add" layoutX="146.0" layoutY="63.0" prefHeight="25.0" prefWidth="140.0" AnchorPane.leftAnchor="146.0" />
+      <JFXDatePicker fx:id="endDate" defaultColor="#243add" layoutX="483.0" layoutY="65.0" prefHeight="25.0" prefWidth="140.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="14.0" prefHeight="27.0" prefWidth="774.0" text="Хисобот" textFill="#652929" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="63.0" text="Бошланиш куни" textFill="#652929">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="61.0" text="Тугаланган кун" textFill="#652929">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="660.0" prefHeight="42.0" prefWidth="155.0" text="Жами Сумма:" textFill="#652929" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="1074.0" AnchorPane.topAnchor="660.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalValue" layoutX="274.0" layoutY="660.0" prefHeight="42.0" prefWidth="220.0" text=" 0 сум" textFill="#652929" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="874.0" AnchorPane.topAnchor="660.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="search" buttonType="RAISED" layoutX="830.0" layoutY="57.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #243add;" text="Кидириш" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Clear Search_48px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="printBtn" buttonType="RAISED" layoutX="985.0" layoutY="57.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #243add;" text="Чоп этиш" textFill="WHITE">
+       <font>
+           <Font name="System Bold" size="14.0" />
+       </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Print_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="exit" layoutX="1152.0" layoutY="57.0" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #da532c;" text="Чикиш" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/Exit_24px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="warehouseProduct" buttonType="RAISED" layoutX="662.0" layoutY="57.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #243add;" text="Колдик М." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Shopping Cart Loaded_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="503.0" layoutY="658.0" prefHeight="47.0" prefWidth="240.0" text="Кассадан олинган сумма:" textFill="#652929" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="503.0" AnchorPane.topAnchor="658.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dayExpense" layoutX="743.0" layoutY="661.0" prefHeight="42.0" prefWidth="220.0" text=" 0 сум" textFill="#652929" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="661.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="970.0" layoutY="659.0" prefHeight="44.0" prefWidth="185.0" text="Кассадаги сумма:" textFill="#652929" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="659.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="moneyInShop" layoutX="1148.0" layoutY="660.0" prefHeight="42.0" prefWidth="220.0" text=" 0 сум" textFill="#652929" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="658.0">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

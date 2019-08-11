@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="928.0" styleClass="parenty" stylesheets="@/css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.controllers.companyContent.CompanyContentController">
+   <children>
+      <HBox layoutX="-3.0" prefHeight="63.0" prefWidth="759.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="addCompany" prefHeight="43.0" prefWidth="170.0" ripplerFill="BLACK" style="-fx-background-color: #3b4dd0;" text="Корхона кўшиш" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/img/addCompanyImages/New Company_48px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="editCompany" prefHeight="43.0" prefWidth="170.0" style="-fx-background-color: #3b4dd0;" text="Ўзгартириш" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/img/addCompanyImages/Link Company Parent_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="historyCompany" prefHeight="43.0" prefWidth="170.0" style="-fx-background-color: #3b4dd0;" text="Корхона тарихи" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/img/addCompanyImages/Clock_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="exit" prefHeight="43.0" prefWidth="170.0" style="-fx-background-color: #da532c;" text="Чикиш" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/img/Exit_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+      <TableView fx:id="tableView" layoutX="-2.0" layoutY="101.0" prefHeight="432.0" prefWidth="749.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0">
+        <columns>
+          <TableColumn fx:id="numC" prefWidth="75.0" text="№" />
+          <TableColumn fx:id="companyName" prefWidth="223.0" text="Корхона номи" />
+            <TableColumn fx:id="directorName" prefWidth="194.0" text="Рахбар исми" />
+            <TableColumn fx:id="companyAddress" text="Корхона манзили" />
+            <TableColumn fx:id="phone" prefWidth="97.0" text="Телефон раками" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

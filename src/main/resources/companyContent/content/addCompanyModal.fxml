@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.controllers.companyContent.contents.AddCompanyModalController">
+   <children>
+      <VBox layoutY="6.0" prefHeight="409.0" prefWidth="643.0" AnchorPane.bottomAnchor="142.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="120.0" text="Корхона номи:">
+                     <HBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="60.0" top="15.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@/img/addCompanyImages/Organization_48px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="companyName" maxWidth="292.0" minWidth="292.0" prefHeight="31.0" prefWidth="292.0">
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label fx:id="fillName" text="*" textFill="#dd0808">
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="158.0" text="Рахбарининг исми:">
+                     <HBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@/img/addCompanyImages/Manager_48px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="directorName" maxWidth="292.0" minWidth="292.0" prefHeight="31.0" prefWidth="292.0">
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label fx:id="fillDirector" text="*" textFill="#dd0808">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="158.0" text="Корхона Манзили:">
+                     <HBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@/img/addCompanyImages/Home_48px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="address" maxWidth="292.0" minWidth="292.0" prefHeight="31.0" prefWidth="292.0">
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label fx:id="fillAdress" text="*" textFill="#dd0808">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="158.0" text="Телефон раками:">
+                     <HBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@/img/addCompanyImages/Office Phone_48px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="phone" maxWidth="292.0" minWidth="292.0" prefHeight="31.0" prefWidth="292.0">
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label fx:id="fillPhone" text="*" textFill="#dd0808">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXButton fx:id="accept" layoutX="126.0" layoutY="464.0" prefHeight="46.0" prefWidth="154.0" style="-fx-background-color: #3b4dd0;" text="Киритиш" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/addCompanyImages/Add User Male_24px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="exit" layoutX="328.0" layoutY="464.0" prefHeight="46.0" prefWidth="154.0" style="-fx-background-color: #da532c;" text="Чикиш" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/addCompanyImages/Cancel_24px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="info" layoutX="181.0" layoutY="398.0" prefHeight="35.0" prefWidth="281.0" text="Малумот янгиланди" textFill="#2b8324">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

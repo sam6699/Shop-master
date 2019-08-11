@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="273.0" prefWidth="653.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.controllers.productContent.contents.ConfirmDeletController">
+   <children>
+      <JFXButton fx:id="btnCancel" buttonType="RAISED" cancelButton="true" layoutX="368.0" layoutY="164.0" onAction="#clicked" prefHeight="61.0" prefWidth="119.0" ripplerFill="#f208174f" style="-fx-background-color: #da532c;" text="БЕКОР килиш" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" defaultButton="true" layoutX="125.0" layoutY="164.0" onAction="#clicked" prefHeight="61.0" prefWidth="119.0" ripplerFill="#15ff004f" style="-fx-background-color: #2b5797;" text="ЎЧИРИШ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="info" alignment="CENTER" layoutX="4.0" layoutY="42.0" prefHeight="30.0" prefWidth="643.0" text="товарини ўчиришга тасдиклаш">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

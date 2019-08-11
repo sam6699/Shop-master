@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="748.0" prefWidth="1003.0" styleClass="parenty" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.controllers.Keyboard">
+   <children>
+      <GridPane alignment="TOP_CENTER" layoutX="14.0" layoutY="157.0" prefHeight="439.0" prefWidth="355.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton fx:id="one" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" ripplerFill="#655a5a" style="-fx-background-color: #243add;" stylesheets="@css/style.css" text="1" textFill="#fffdfd">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="two" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="2" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="three" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="3" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="four" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="4" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="five" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="six" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="seven" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="7" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="eight" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="nine" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="9" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="zero" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="0" textFill="#f5f5f5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="zero2" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="00" textFill="#f5f5f5" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="zero3" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="000" textFill="#f5f5f5" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <JFXButton id="back-btn" fx:id="back" buttonType="RAISED" ellipsisString="" layoutX="371.0" layoutY="160.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" styleClass="back" stylesheets="@css/style.css" text="  " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="confirm-btn" fx:id="purchase" buttonType="RAISED" contentDisplay="CENTER" layoutX="205.0" layoutY="608.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="490.0" style="-fx-background-color: #243add;" styleClass="confirm" stylesheets="@css/style.css" text="Сотиш" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="35.0" layoutY="72.0" text="Накд:" textFill="#652929">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="610.0" layoutY="61.0" text="Пластик:" textFill="#652929">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="cash" layoutX="13.0" layoutY="98.0" prefHeight="31.0" prefWidth="348.0" styleClass="digits" stylesheets="@css/style.css" text="0" unFocusColor="#652929">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="card" layoutX="497.0" layoutY="98.0" prefHeight="31.0" prefWidth="348.0" styleClass="digits" stylesheets="@css/style.css" text="0">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></JFXTextField>
+      <Label layoutX="323.0" layoutY="14.0" text="Жами:" textFill="#652929">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font></Label>
+      <Label fx:id="pays" layoutX="80.0" layoutY="72.0" text="0" textFill="#652929">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="toPurchase" layoutX="414.0" layoutY="16.0" prefHeight="17.0" prefWidth="122.0" text="1" textFill="#652929">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font></Label>
+      <GridPane alignment="TOP_CENTER" layoutX="497.0" layoutY="157.0" prefHeight="438.0" prefWidth="355.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton fx:id="one1" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" ripplerFill="#655a5a" style="-fx-background-color: #243add;" stylesheets="@css/style.css" text="1" textFill="#fffdfd">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="two1" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="2" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="three1" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="3" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="four1" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="4" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="five1" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="six1" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="seven1" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="7" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="eight1" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="nine1" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="9" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="zero1" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="0" textFill="#f5f5f5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="zero4" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="00" textFill="#f5f5f5" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="zero5" buttonType="RAISED" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" style="-fx-background-color: #243add;" text="000" textFill="#f5f5f5" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <JFXButton id="back-btn" fx:id="back1" buttonType="RAISED" ellipsisString="" layoutX="852.0" layoutY="160.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="112.0" styleClass="back" stylesheets="@css/style.css" text="  " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="pays1" layoutX="686.0" layoutY="61.0" text="0" textFill="#652929">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="exitBtn" layoutX="765.0" layoutY="608.0" prefHeight="105.0" prefWidth="188.0" style="-fx-background-color: red;" text="Бекор килиш" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

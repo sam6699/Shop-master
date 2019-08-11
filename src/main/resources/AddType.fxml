@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="195.0" prefWidth="485.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.controllers.AddTypeController">
+   <children>
+      <JFXButton fx:id="btn" layoutX="14.0" layoutY="134.0" prefHeight="47.0" prefWidth="219.0" ripplerFill="WHITE" style="-fx-background-color: #9370f1;" text="Саклаш ва чикиш" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="info" layoutX="114.0" layoutY="14.0" text="Товарнинг турини кушиш">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="field" layoutX="115.0" layoutY="73.0" maxWidth="285.0" minWidth="285.0" prefHeight="43.0" prefWidth="285.0" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="cancel" layoutX="252.0" layoutY="134.0" prefHeight="47.0" prefWidth="219.0" ripplerFill="WHITE" style="-fx-background-color: #e42121;" text="Чикиш" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="img" fitHeight="30.0" fitWidth="35.0" layoutX="89.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Box_24px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

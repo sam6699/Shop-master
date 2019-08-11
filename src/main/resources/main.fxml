@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1392.0" styleClass="parenty" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.controllers.Controller">
+    <children>
+        <JFXToolbar fx:id="toolbar" layoutX="467.0" prefHeight="72.0" prefWidth="923.0">
+            <top>
+                <HBox prefHeight="72.0" prefWidth="780.0" BorderPane.alignment="CENTER">
+                    <children>
+                  <JFXButton fx:id="switchBtn" buttonType="RAISED" contentDisplay="TOP" mnemonicParsing="false" opacity="0.8" prefHeight="39.0" prefWidth="158.0" style="-fx-background-color: red;" stylesheets="@css/style.css" text="Ахоли" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                        <JFXButton fx:id="report" buttonType="RAISED" contentDisplay="TOP" mnemonicParsing="false" opacity="0.8" prefHeight="39.0" prefWidth="155.0" style="-fx-background-color: #243add;" text="Хисобот" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" top="5.0" />
+                            </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="addProduct" buttonType="RAISED" mnemonicParsing="false" opacity="0.8" prefHeight="39.0" prefWidth="196.0" style="-fx-background-color: #243add;" text="Махсулот кўшиш" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" top="5.0" />
+                            </HBox.margin>
+                        </JFXButton>
+                  <JFXButton fx:id="clients" buttonType="RAISED" mnemonicParsing="false" opacity="0.8" prefHeight="39.0" prefWidth="196.0" style="-fx-background-color: #243add;" text="Корхоналар" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="expense" buttonType="RAISED" mnemonicParsing="false" opacity="0.8" prefHeight="39.0" prefWidth="136.0" style="-fx-background-color: #243add;" text="Харажат" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                    </children>
+                </HBox>
+            </top>
+        </JFXToolbar>
+        <SplitPane fx:id="split" dividerPositions="0.423407917383821" orientation="VERTICAL" prefHeight="790.0" prefWidth="475.0" styleClass="background" stylesheets="@css/style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="400.0">
+                    <children>
+                        <TableView fx:id="table" maxHeight="332.0" maxWidth="471.0" minHeight="114.0" minWidth="471.0" prefHeight="239.0" prefWidth="471.0" styleClass="background" stylesheets="@css/style.css">
+                            <columns>
+                                <TableColumn fx:id="name" prefWidth="86.0" text="Номи" />
+                                <TableColumn fx:id="amount" prefWidth="47.0" text="Сони" />
+                                <TableColumn fx:id="measure" prefWidth="71.0" text="Ўлчам" />
+                        <TableColumn fx:id="one_price" prefWidth="88.0" text="Накд" />
+                                <TableColumn id="table-column" fx:id="price" prefWidth="62.0" text="Сумма" />
+                        <TableColumn id="table-column" fx:id="remove" prefWidth="115.0" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="450.0" maxWidth="473.0" minHeight="0.0" minWidth="0.0" prefHeight="407.0" prefWidth="473.0" styleClass="background" stylesheets="@css/style.css" SplitPane.resizableWithParent="false">
+                    <children>
+                        <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="235.0" layoutY="205.0" mnemonicParsing="false" opacity="0.8" prefHeight="72.0" prefWidth="235.0" style="-fx-background-color: #243add;" text="Бекор килиш" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold Italic" size="25.0" />
+                            </font></JFXButton>
+                        <JFXButton fx:id="purchase" buttonType="RAISED" layoutY="131.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="72.0" prefWidth="470.0" style="-fx-background-color: #3f2727;" text="Накд ва пластик" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold Italic" size="25.0" />
+                            </font></JFXButton>
+                        <Label fx:id="check" alignment="CENTER" layoutY="1.0" prefHeight="54.0" prefWidth="470.0" style="-fx-background-color: #3f2727;" text="Жами: 0 сум" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold Italic" size="20.0" />
+                            </font></Label>
+                        <JFXButton fx:id="cash" buttonType="RAISED" layoutX="235.0" layoutY="57.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="72.0" prefWidth="235.0" style="-fx-background-color: red;" text="Накд" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold Italic" size="25.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="card" buttonType="RAISED" layoutY="57.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="72.0" prefWidth="235.0" style="-fx-background-color: green;" text="Пластик" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold Italic" size="25.0" />
+                            </font>
+                        </JFXButton>
+                  <JFXButton fx:id="transfer" buttonType="RAISED" layoutY="205.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="72.0" prefWidth="235.0" style="-fx-background-color: #d38989;" text="Пул ўтказиш" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="getProduct" buttonType="RAISED" layoutY="347.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.9" prefHeight="96.0" prefWidth="473.0" style="-fx-background-color: #243add;" text="Товар кабул килиш" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <HBox layoutX="2.0" layoutY="277.0" prefHeight="72.0" prefWidth="470.0" style="-fx-background-color: #d3c3c3;">
+                     <children>
+                        <JFXCheckBox fx:id="get" prefHeight="41.0" prefWidth="114.0" text="Кирим">
+                           <HBox.margin>
+                              <Insets left="80.0" />
+                           </HBox.margin>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="sell" prefHeight="41.0" prefWidth="96.0" text="Чиким">
+                           <HBox.margin>
+                              <Insets left="130.0" />
+                           </HBox.margin>
+                        </JFXCheckBox>
+                     </children>
+                  </HBox>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <TabPane fx:id="types" layoutX="402.0" layoutY="48.0" prefHeight="747.0" prefWidth="822.0" side="LEFT" stylesheets="@css/style.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="470.0" AnchorPane.rightAnchor="5.0" />
+    </children>
+</AnchorPane>
